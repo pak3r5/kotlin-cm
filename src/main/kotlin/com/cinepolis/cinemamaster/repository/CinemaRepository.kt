@@ -1,7 +1,7 @@
 package com.cinepolis.cinemamaster.repository
 
-import com.cinepolis.cinemamaster.model.Country
+import com.cinepolis.cinemamaster.model.Cinema
 import org.springframework.data.mongodb.repository.MongoRepository
 
-interface CountryRepository:MongoRepository<Country,String> {
+interface CinemaRepository: MongoRepository<Cinema, String> {
 }

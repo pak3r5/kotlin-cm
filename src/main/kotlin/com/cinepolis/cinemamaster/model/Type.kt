@@ -1,6 +1,8 @@
 package com.cinepolis.cinemamaster.model
 
+import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
+import org.springframework.data.mongodb.core.mapping.Field
 
-@Document
-data class Type(val id:Long,val uuid:String,val name:String)
+@Document(collection="types")
+data class Type(@Id val id:String?=null, @Field val name:String)
